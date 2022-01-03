@@ -1,10 +1,10 @@
 numOfClicks = 0;
 
-function Inc () {
-    numOfClicks++;
+function Inc (addNum) {
+    numOfClicks+=addNum;
     if (numOfClicks==1){
-        document.getElementById("btnClicks").innerText = numOfClicks + " click";
+        document.getElementById("lblCount").innerText = numOfClicks + " click";
     } else {
-        document.getElementById("btnClicks").innerText = numOfClicks + " clicks";
+        document.getElementById("lblCount").innerText = numOfClicks + " clicks";
     }
 }
